@@ -148,7 +148,7 @@ class DataMCStack:
       mcStack.Draw("histsame")
       dataHist.Draw("esame")
       labels = [fileConfigData['title']] + [fileConfig['title'] for fileConfig in fileConfigMCs]
-      legOptions = ["lep"]+["F"]*len(fileConfigMCs)
+      legOptions = ["l"]+["F"]*len(fileConfigMCs)
       leg = drawNormalLegend([dataHist]+mcHists,labels,legOptions)
       drawStandardCaptions(canvas,caption,captionleft1=captionleft1,captionleft2=captionleft2,captionleft3=captionleft3,captionright1=captionright1,captionright2=captionright2,captionright3=captionright3,preliminaryString=preliminaryString)
       canvas.RedrawAxis()
